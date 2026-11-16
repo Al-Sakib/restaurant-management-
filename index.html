@@ -296,77 +296,7 @@
     </section>
 
 
-    <!-- Contact Section -->
-    <section id="contact" class="bg-orange-50 py-16 px-6">
-
-        <div class="max-w-7xl mx-auto text-center">
-
-            <h2 class="text-3xl font-bold mb-6">
-                Contact Us
-            </h2>
-
-            <p class="text-gray-600 mb-3">
-                We would love to hear from you!
-            </p>
-
-            <p class="mb-2">📍 Chattogram, Bangladesh</p>
-            <p class="mb-2">📞 +880 1700-000000</p>
-            <p>✉️ info@foodierestaurant.com</p>
-
-        </div>
-
-    </section>
-
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white text-center py-6 px-6">
-
-        <h2 class="text-xl font-bold text-orange-500 mb-2">
-            Foodie Restaurant
-        </h2>
-
-        <p class="text-gray-400 text-sm">
-            © 2026 Foodie Restaurant. All Rights Reserved.
-        </p>
-
-        <p class="text-gray-500 text-sm mt-2">
-            Designed with HTML and Tailwind CSS.
-        </p>
-
-    </footer>
-
-
-    <!-- JavaScript for Interactivity -->
-    <script>
-
-        // Mobile Navigation Toggle
-        const menuBtn = document.getElementById('menuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-
-        menuBtn.addEventListener('click', function() {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Close mobile menu after clicking a link
-        mobileMenu.querySelectorAll('a').forEach(function(link) {
-            link.addEventListener('click', function() {
-                mobileMenu.classList.add('hidden');
-            });
-        });
-
-        // Order Button
-        function orderFood(foodName) {
-            alert('Thank you for choosing ' + foodName + '!');
-        }
-
-        // Reservation Form
-        document.getElementById('bookingForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('Thank you! Your reservation request has been received.');
-            this.reset();
-        });
-
-    </script>
+    
 
 
 
