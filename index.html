@@ -226,6 +226,149 @@
             </div>
         </div>
     </section>
+    <!-- Special Offer Section -->
+    <section class="py-20 px-6 bg-gray-900 text-white text-center">
+
+        <div class="max-w-3xl mx-auto">
+            <p class="text-orange-400 font-semibold uppercase mb-3">
+                Special Offer
+            </p>
+
+            <h2 class="text-3xl md:text-5xl font-bold mb-5">
+                Get 20% Off Your First Order!
+            </h2>
+
+            <p class="text-gray-300 mb-8">
+                Enjoy our delicious food with an exclusive discount.
+                Visit us today!
+            </p>
+
+            <a href="#reservation"
+               class="inline-block bg-orange-600 px-8 py-3 rounded-full hover:bg-orange-700 transition">
+                Book Your Table
+            </a>
+        </div>
+
+    </section>
+
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="py-20 px-6">
+
+        <div class="max-w-3xl mx-auto text-center">
+            <p class="text-orange-600 font-semibold uppercase mb-3">
+                Reservation
+            </p>
+
+            <h2 class="text-3xl font-bold mb-5">
+                Reserve Your Table
+            </h2>
+
+            <p class="text-gray-500 mb-8">
+                Plan a wonderful dining experience with us.
+            </p>
+
+            <form id="bookingForm" class="grid sm:grid-cols-2 gap-4 text-left">
+
+                <input type="text" placeholder="Your Name"
+                       required
+                       class="border p-3 rounded-lg w-full focus:outline-orange-500">
+
+                <input type="email" placeholder="Your Email"
+                       required
+                       class="border p-3 rounded-lg w-full focus:outline-orange-500">
+
+                <input type="date" required
+                       class="border p-3 rounded-lg w-full">
+
+                <input type="number" min="1" max="20"
+                       placeholder="Number of Guests"
+                       required
+                       class="border p-3 rounded-lg w-full">
+
+                <button type="submit"
+                        class="sm:col-span-2 bg-orange-600 text-white p-3 rounded-lg hover:bg-orange-700 transition font-semibold">
+                    Confirm Reservation
+                </button>
+
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-orange-50 py-16 px-6">
+
+        <div class="max-w-7xl mx-auto text-center">
+
+            <h2 class="text-3xl font-bold mb-6">
+                Contact Us
+            </h2>
+
+            <p class="text-gray-600 mb-3">
+                We would love to hear from you!
+            </p>
+
+            <p class="mb-2">📍 Chattogram, Bangladesh</p>
+            <p class="mb-2">📞 +880 1700-000000</p>
+            <p>✉️ info@foodierestaurant.com</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6 px-6">
+
+        <h2 class="text-xl font-bold text-orange-500 mb-2">
+            Foodie Restaurant
+        </h2>
+
+        <p class="text-gray-400 text-sm">
+            © 2026 Foodie Restaurant. All Rights Reserved.
+        </p>
+
+        <p class="text-gray-500 text-sm mt-2">
+            Designed with HTML and Tailwind CSS.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+
+        // Mobile Navigation Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu after clicking a link
+        mobileMenu.querySelectorAll('a').forEach(function(link) {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Order Button
+        function orderFood(foodName) {
+            alert('Thank you for choosing ' + foodName + '!');
+        }
+
+        // Reservation Form
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Thank you! Your reservation request has been received.');
+            this.reset();
+        });
+
+    </script>
+
+
 
 
     
